@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Seminar Planning Service",
+    "image": "https://i.ibb.co/z2bjxbF/seminar.jpg",
+    "price": "$499",
+    "description": "Let us handle the logistics and planning for your educational seminars. From venue selection to attendee coordination, we ensure a seamless and impactful event.",
+    "details": "Our Seminar Planning Service is designed to take the stress out of organizing educational seminars. We meticulously handle all aspects of event logistics, including venue selection, participant registration, and coordination with speakers. With our expertise, you can focus on delivering valuable content, while we ensure a smooth and memorable experience for both organizers and attendees."
+  },
+  {
+    "id": 2,
+    "name": "Workshop Management Package",
+    "image": "https://i.ibb.co/879v1gQ/slider3.jpg",
+    "price": "$699",
+    "description": "Our workshop management package covers everything from content creation to participant engagement. Focus on your content, and we'll take care of the rest.",
+    "details": "Experience stress-free workshop management with our comprehensive package. We handle the creation of engaging workshop content, participant registrations, and all logistical aspects. This allows you to concentrate on delivering impactful workshops while we ensure a seamless and interactive experience for participants. Elevate your workshop events with our Workshop Management Package."
+  },
+  {
+    "id": 3,
+    "name": "Conference Coordination Service",
+    "image": "https://i.ibb.co/nrcdbm4/slider2.jpg",
+    "price": "$899",
+    "description": "Planning a conference? Let us manage the logistics, coordinate speakers, and ensure a smooth experience for both organizers and attendees.",
+    "details": "Our Conference Coordination Service is tailored to make organizing conferences a breeze. We take care of every detail, from venue setup and speaker coordination to attendee engagement strategies. With our expert team, your conference will be executed flawlessly, providing a valuable experience for both organizers and participants. Trust us to manage the intricacies and deliver a successful conference."
+  },
+  {
+    "id": 4,
+    "name": "Educational Fair Organization",
+    "image": "https://i.ibb.co/02HzBvQ/slider1.jpg",
+    "price": "$799",
+    "description": "Organize educational fairs that connect institutions with potential students. Our comprehensive service covers everything from venue setup to marketing.",
+    "details": "Transform your educational fairs into dynamic and engaging events with our Educational Fair Organization service. We handle every aspect, including venue setup, marketing strategies, and participant coordination. By entrusting us with the organization, you can ensure that your fair attracts the right institutions and connects them with enthusiastic students. Elevate your educational fairs with our professional touch."
+  },
+  {
+    "id": 5,
+    "name": "Online Course Launch Assistance",
+    "image": "https://i.ibb.co/swG4PQh/online-course.webp",
+    "price": "$599",
+    "description": "Launching an online course? We assist with the launch strategy, marketing, and technical aspects, ensuring a successful start for your educational content.",
+    "details": "Kickstart your online courses with confidence using our Online Course Launch Assistance. We provide strategic guidance on launch campaigns, handle marketing efforts, and ensure the technical aspects of your online course are flawless. With our assistance, you can achieve a successful launch and attract a wide audience to your educational content. Launch your online courses effectively with our support."
+  },
+  {
+    "id": 6,
+    "name": "Guest Speaker Management",
+    "image": "https://i.ibb.co/8cpVjGv/guest-speaker.jpg",
+    "price": "$599",
+    "description": "Bring influential speakers to your events with ease. We handle speaker invitations, travel arrangements, and ensure a memorable experience for your audience.",
+    "details": "Elevate your events with captivating speakers through our Guest Speaker Management service. We take care of the entire process, from inviting influential speakers to managing their travel arrangements. Our goal is to ensure a seamless and memorable experience for your audience, leaving a lasting impression. Entrust us with your speaker management, and make your events truly exceptional."
+  }
+]

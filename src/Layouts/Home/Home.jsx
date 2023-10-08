@@ -1,3 +1,5 @@
+
+import EventSection from "./Events/Events";
 import ServiceSection from "./Services/Services";
 import Slider from "./Slider/Slider";
 
@@ -6,6 +8,7 @@ const Home = () => {
       <>
           <Slider></Slider>
           <ServiceSection></ServiceSection>
+          <EventSection></EventSection>
       </>
   );
 };

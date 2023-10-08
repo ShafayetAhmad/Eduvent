@@ -1,7 +1,7 @@
 const Slider = () => {
   return (
     <div>
-      <div className="flex justify-center my-8">
+      <div className="flex justify-center mb-8">
         <div className="w-full h-[75vh] carousel">
           <div id="slide1" className="carousel-item relative w-full">
             <img

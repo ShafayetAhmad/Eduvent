@@ -9,8 +9,12 @@ import Register from "./Layouts/UserManagment/Register";
 import AuthProvider from "./Providers/AuthProvider";
 import Home from "./Layouts/Home/Home";
 import PrivateRoute from "./PrivateRoute";
-import ServiceDetail from "./Layouts/ServiceDetails/ServiceDetails";
 import Services from "./Layouts/Home/Services/Services";
+import Events from "./Layouts/Home/Events/Events";
+import ServiceDetail from "./Layouts/ServiceDetails/ServiceDetails";
+import EventDetails from "./Layouts/Home/EventDetails/EventDetails";
+import BlogDetails from "./Layouts/Home/BlogDetails/BlogDetails";
+import Blogs from "./Layouts/Home/Blogs/Blogs";
 
 const routes = createBrowserRouter([
   {
@@ -48,6 +52,43 @@ const routes = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("/services.json"),
+      },
+
+      {
+        path: "/events/:id",
+        element: (
+          <PrivateRoute>
+            <EventDetails></EventDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/events.json"),
+      },
+      {
+        path: "/events",
+        element: (
+          <PrivateRoute>
+            <Events></Events>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/events.json"),
+      },
+      {
+        path: "/blogs/:id",
+        element: (
+          <PrivateRoute>
+            <BlogDetails></BlogDetails>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/blogs.json"),
+      },
+      {
+        path: "/blogs",
+        element: (
+          <PrivateRoute>
+            <Blogs></Blogs>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/events.json"),
       },
     ],
   },

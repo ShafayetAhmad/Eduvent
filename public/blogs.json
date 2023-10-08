@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Behind the Scenes: Seminar Success",
+    "image": "https://example.com/seminar-success.jpg",
+    "author": "John Doe",
+    "date": "2023-10-08",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis consectetur lectus, eget consequat ipsum gravida eu. Nullam efficitur, erat id tincidunt interdum, nisl ligula fringilla mi, et tincidunt ante mauris et ante."
+  },
+  {
+    "id": 2,
+    "title": "Crafting Memorable Workshops",
+    "image": "https://example.com/memorable-workshops.jpg",
+    "author": "Jane Smith",
+    "date": "2023-10-09",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis consectetur lectus, eget consequat ipsum gravida eu. Nullam efficitur, erat id tincidunt interdum, nisl ligula fringilla mi, et tincidunt ante mauris et ante."
+  },
+  {
+    "id": 3,
+    "title": "Navigating the Conference Landscape",
+    "image": "https://example.com/conference-landscape.jpg",
+    "author": "Robert Johnson",
+    "date": "2023-10-10",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis consectetur lectus, eget consequat ipsum gravida eu. Nullam efficitur, erat id tincidunt interdum, nisl ligula fringilla mi, et tincidunt ante mauris et ante."
+  },
+  {
+    "id": 4,
+    "title": "Showcasing Educational Fairs: A Success Story",
+    "image": "https://example.com/educational-fair-success.jpg",
+    "author": "Emily Davis",
+    "date": "2023-10-11",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis consectetur lectus, eget consequat ipsum gravida eu. Nullam efficitur, erat id tincidunt interdum, nisl ligula fringilla mi, et tincidunt ante mauris et ante."
+  },
+  {
+    "id": 5,
+    "title": "Launching Online Courses: Strategy and Tips",
+    "image": "https://example.com/online-course-launch.jpg",
+    "author": "Michael Clark",
+    "date": "2023-10-12",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis consectetur lectus, eget consequat ipsum gravida eu. Nullam efficitur, erat id tincidunt interdum, nisl ligula fringilla mi, et tincidunt ante mauris et ante."
+  },
+  {
+    "id": 6,
+    "title": "The Art of Inviting Guest Speakers",
+    "image": "https://example.com/guest-speaker-invitations.jpg",
+    "author": "Sarah Turner",
+    "date": "2023-10-13",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis consectetur lectus, eget consequat ipsum gravida eu. Nullam efficitur, erat id tincidunt interdum, nisl ligula fringilla mi, et tincidunt ante mauris et ante."
+  }
+]
