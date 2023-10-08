@@ -1,12 +1,12 @@
-import { useContext } from "react";
-import { AuthContext } from "../../Providers/AuthProvider";
+import ServiceSection from "./Services/Services";
+import Slider from "./Slider/Slider";
 
 const Home = () => {
-  const { user } = useContext(AuthContext);
   return (
-    <div>
-      <h1>This is Home. {user}</h1>
-    </div>
+      <>
+          <Slider></Slider>
+          <ServiceSection></ServiceSection>
+      </>
   );
 };
 
