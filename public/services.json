@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Web Development Workshop",
+    "image": "https://i.ibb.co/HHdxgnD/web-dev.jpg",
+    "price": "$99",
+    "description": "Learn the essentials of web development in this hands-on workshop."
+  },
+  {
+    "id": 2,
+    "name": "Digital Marketing Masterclass",
+    "image": "https://i.ibb.co/PgbrhL6/dig-mark.jpg",
+    "price": "$79",
+    "description": "Discover effective digital marketing strategies with industry experts."
+  },
+  {
+    "id": 3,
+    "name": "Data Science Bootcamp",
+    "image": "https://i.ibb.co/GQ1ZqV8/data-sci.jpg",
+    "price": "$129",
+    "description": "Immerse yourself in the world of data science and machine learning."
+  },
+  {
+    "id": 4,
+    "name": "Photography Basics Course",
+    "image": "https://i.ibb.co/6ttSDjK/photography.jpg",
+    "price": "$49",
+    "description": "Master the art of photography with our comprehensive basics course."
+  },
+  {
+    "id": 5,
+    "name": "Graphic Design Workshop",
+    "image": "https://i.ibb.co/pbzQCLS/graphic-design.png",
+    "price": "$89",
+    "description": "Unleash your creativity with our hands-on graphic design workshop."
+  },
+  {
+    "id": 6,
+    "name": "Mobile App Development Bootcamp",
+    "image": "https://i.ibb.co/jyRvjf9/mobile-app-dev.png",
+    "price": "$109",
+    "description": "Build and deploy your own mobile apps in this intensive bootcamp."
+  }
+]
