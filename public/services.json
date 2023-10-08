@@ -4,41 +4,47 @@
     "name": "Web Development Workshop",
     "image": "https://i.ibb.co/HHdxgnD/web-dev.jpg",
     "price": "$99",
-    "description": "Learn the essentials of web development in this hands-on workshop."
+    "description": "Learn the essentials of web development in this hands-on workshop.",
+    "details": "Discover the intricacies of modern web development in our comprehensive workshop. Dive into HTML, CSS, and JavaScript to build dynamic and responsive websites. Explore the latest frameworks and tools to streamline your development process. Whether you're a beginner or looking to enhance your skills, our expert instructors will guide you through real-world projects and best practices. Unlock the potential of web development and elevate your coding journey with our Web Development Workshop."
   },
   {
     "id": 2,
     "name": "Digital Marketing Masterclass",
     "image": "https://i.ibb.co/PgbrhL6/dig-mark.jpg",
     "price": "$79",
-    "description": "Discover effective digital marketing strategies with industry experts."
+    "description": "Discover effective digital marketing strategies with industry experts.",
+    "details": "Join our Digital Marketing Masterclass to explore the dynamic world of online marketing. From social media campaigns to SEO and analytics, our experts will share insights and tactics to boost your brand's online presence. Learn how to create compelling content, analyze data, and optimize your digital strategies for maximum impact. Whether you're a business owner or marketing professional, this masterclass provides the knowledge and skills to thrive in the digital landscape."
   },
   {
     "id": 3,
     "name": "Data Science Bootcamp",
     "image": "https://i.ibb.co/GQ1ZqV8/data-sci.jpg",
     "price": "$129",
-    "description": "Immerse yourself in the world of data science and machine learning."
+    "description": "Immerse yourself in the world of data science and machine learning.",
+    "details": "Embark on a transformative journey into Data Science and Machine Learning with our immersive bootcamp. Gain hands-on experience in data analysis, visualization, and predictive modeling. Explore popular tools and frameworks used in the industry. Our comprehensive curriculum covers everything from data preprocessing to model deployment. Whether you're a beginner or looking to upskill, this bootcamp equips you with the knowledge and tools to excel in the data-driven world."
   },
   {
     "id": 4,
     "name": "Photography Basics Course",
     "image": "https://i.ibb.co/6ttSDjK/photography.jpg",
     "price": "$49",
-    "description": "Master the art of photography with our comprehensive basics course."
+    "description": "Master the art of photography with our comprehensive basics course.",
+    "details": "Capture the world through your lens with our Photography Basics Course. Learn the fundamentals of composition, lighting, and camera settings. Dive into the art and science of photography, from portrait to landscape photography. Our experienced instructors will guide you through practical exercises and creative projects. Whether you're a hobbyist or aspiring professional, this course is your gateway to mastering the art of photography."
   },
   {
     "id": 5,
     "name": "Graphic Design Workshop",
     "image": "https://i.ibb.co/pbzQCLS/graphic-design.png",
     "price": "$89",
-    "description": "Unleash your creativity with our hands-on graphic design workshop."
+    "description": "Unleash your creativity with our hands-on graphic design workshop.",
+    "details": "Ignite your creative spark in our Graphic Design Workshop. Explore the principles of design, typography, and color theory. Dive into industry-standard software and tools used by graphic designers. From creating logos to designing marketing materials, this workshop covers a range of practical skills. Whether you're a budding designer or looking to enhance your skills, our workshop provides a hands-on learning experience to unleash your creative potential."
   },
   {
     "id": 6,
     "name": "Mobile App Development Bootcamp",
     "image": "https://i.ibb.co/jyRvjf9/mobile-app-dev.png",
     "price": "$109",
-    "description": "Build and deploy your own mobile apps in this intensive bootcamp."
+    "description": "Build and deploy your own mobile apps in this intensive bootcamp.",
+    "details": "Transform your ideas into fully functional mobile apps with our Mobile App Development Bootcamp. Learn the latest frameworks and technologies to create Android and iOS applications. Dive into the entire app development lifecycle, from ideation to deployment. Our experienced instructors will guide you through hands-on projects, teaching you the skills needed to succeed in the competitive app development landscape."
   }
 ]

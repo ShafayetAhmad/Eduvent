@@ -10,6 +10,7 @@ import AuthProvider from "./Providers/AuthProvider";
 import Home from "./Layouts/Home/Home";
 import PrivateRoute from "./PrivateRoute";
 import ServiceDetail from "./Layouts/ServiceDetails/ServiceDetails";
+import Services from "./Layouts/Home/Services/Services";
 
 const routes = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ const routes = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('/services.json')
+        loader: () => fetch("/services.json"),
       },
       {
         path: "/login",
@@ -32,8 +33,22 @@ const routes = createBrowserRouter([
       },
       {
         path: "/services/:id",
-        element: <PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute>
-      }
+        element: (
+          <PrivateRoute>
+            <ServiceDetail></ServiceDetail>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/services.json"),
+      },
+      {
+        path: "/services",
+        element: (
+          <PrivateRoute>
+            <Services></Services>
+          </PrivateRoute>
+        ),
+        loader: () => fetch("/services.json"),
+      },
     ],
   },
 ]);

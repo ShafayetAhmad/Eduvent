@@ -13,8 +13,10 @@ export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const createUser = async (email, password) => {
+    setLoading(true)
     try {
       return await createUserWithEmailAndPassword(auth, email, password);
     } catch (error) {
@@ -27,10 +29,12 @@ const AuthProvider = ({ children }) => {
   //   };
 
   const logIn = (email, password) => {
+    setLoading(true)
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
+    setLoading(true)
     signOut(auth)
       .then(() => {
         console.log("sign out");
@@ -44,6 +48,7 @@ const AuthProvider = ({ children }) => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       console.log("user in the auth state changed", currentUser);
       setUser(currentUser);
+      setLoading(false);
     });
     return () => {
       unSubscribe();
@@ -54,6 +59,7 @@ const AuthProvider = ({ children }) => {
     createUser,
     logIn,
     logOut,
+    loading,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

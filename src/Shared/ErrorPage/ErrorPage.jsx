@@ -2,9 +2,9 @@ import Navbar from "../NavBar/Navbar";
 
 const ErrorPage = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <Navbar></Navbar>
-      Opps. You are on the wrong page.
+      <div className="text-center mt-20 text-4xl"> Opps. You are on the wrong page.</div>
     </div>
   );
 };
