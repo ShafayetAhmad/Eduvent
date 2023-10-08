@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
-  const [test, setTest] = useState(false);
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    logOut();
+  };
 
   const navLinks = (
     <>
@@ -29,7 +34,7 @@ const Navbar = () => {
 
   const userLinks = (
     <>
-      {test ? (
+      {user ? (
         <div className="navbar-end">
           <p className="mr-4">Hey, User</p>
           <div className="dropdown dropdown-end">
@@ -53,9 +58,11 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/logout" className="text-xl justify-between">
-                  Logout
-                </NavLink>
+                <button onClick={handleSignOut}>
+                  <NavLink to="/" className="text-xl justify-between">
+                    Logout
+                  </NavLink>
+                </button>
               </li>
             </ul>
           </div>

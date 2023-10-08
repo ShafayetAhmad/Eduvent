@@ -1,34 +1,29 @@
 import { Link } from "react-router-dom";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import auth from "../../Firebase/firebase.config";
-import { useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
-  const [userEmail, getUserEmail] = useState(null);
-  const [userPassword, getUserPassword] = useState(null);
+  const { createUser } = useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
     console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
     const name = form.get("name");
-    const email = form.get("email");
-    const password = form.get("password");
-      console.log(name, email, password);
-      
+    const userEmail = form.get("email");
+    const userPassword = form.get("password");
+    console.log(name, userEmail, userPassword);
+    createUser(userEmail, userPassword)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+      });
   };
-
-  createUserWithEmailAndPassword(auth, userEmail, userPassword)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      console.log(user);
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-      // ..
-    });
 
   return (
     <div className="mt-10">
