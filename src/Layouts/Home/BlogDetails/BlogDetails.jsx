@@ -9,13 +9,20 @@ const BlogDetails = () => {
   console.log(blog);
   return (
     <div className="container mx-auto mt-8">
-      <div className="flex">
+      <div className="flex lg:flex-row md:flex-row flex-col">
         <div className="w-1/2">
-          <img src={blog.image} alt={blog.title} className="rounded-lg" />
+          <img src={blog.image} alt={blog.title} className="rounded-lg w-10/12 pl-8" />
         </div>
         <div className="w-1/2 pl-8">
-          <h2 className="text-3xl font-bold mb-4">{blog.title}</h2>
-          <p className="text-gray-700">{blog.content}</p>
+          <div className="font-bold mb-2  text-6xl">{blog.title}</div>
+          <p className="text-gray-700 text-4xl pt-8">
+            {blog.author} | {blog.date}
+          </p>
+        </div>
+      </div>
+      <div>
+        <div className=" pl-8 pt-8">
+          <p className="text-gray-700 text-xl">{blog.content}</p>
         </div>
       </div>
     </div>

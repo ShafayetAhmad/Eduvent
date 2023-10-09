@@ -69,7 +69,7 @@ const Navbar = () => {
         </div>
       ) : (
         <div className="navbar-end">
-          <p className="mr-4">Hey, Alien</p>
+          <p className="mr-4">Hey, Alien. Please Login ➡️</p>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
@@ -124,7 +124,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-3xl">Eduvent</a>
+        <p className="btn btn-ghost normal-case text-5xl">Eduvent</p>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>

@@ -7,7 +7,7 @@ const Service = ({ service}) => {
     <div>
       <div
         key={service.id}
-        className="bg-white rounded-lg overflow-hidden shadow-md"
+        className="bg-white rounded-lg overflow-hidden shadow-md hover:bg-gray-200"
       >
         <img
           src={service.image}

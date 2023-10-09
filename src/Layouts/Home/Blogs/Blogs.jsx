@@ -22,13 +22,17 @@ const Blogs = () => {
 
     fetchData();
   }, []);
+
+  // <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8"></div>
   return (
     <div>
-      <h2>Latest Blogs</h2>
       <section className="events-section py-4 bg-gray-100">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-8">Our Events</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-4xl font-bold text-center mb-8 bg-green-300 py-4 rounded-full">
+            Latest Blogs
+          </h2>
+
+          <div className="">
             {blogsData.map((blog) => (
               <BlogPost blog={blog} key={blog.id}></BlogPost>
             ))}
