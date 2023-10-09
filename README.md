@@ -1,130 +1,32 @@
-<div align="center">
-  <img height="60" src="https://edurev.gumlet.io/AllImages/original/ApplicationImages/CourseImages/944e5d47-8c55-4a89-91e5-22ab5f2798fc_CI.png">
-  <h1>MCQ TEST</h1>
-</div>
+# Eduvent
 
-###### 1. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+Welcome to Eduvent! Your one stop solution to Attend and Organize events.
 
-```javascript
-let greeting;
-greetign = {};
-console.log(greetign);
-```
+## Live Site
 
-- A: `{}`
-- B: `ReferenceError: greetign is not defined`
-- C: `undefined`
+Visit the live site: [Eduvent](https://eduvent-ec381.web.app/)
 
-<details><summary><b>Answer</b></summary>
-<p>
+## Features and Functionalities
 
-#### Answer: ?
+- **User Authentication:**
 
-<i>Write your explanation here</i>
+  - Secure user authentication using Firebase.
+  - Support for Google Sign-In and Email/Password authentication.
 
-</p>
-</details>
+- **Profile Management:**
 
-###### 2. Write the `correct answer` from the following options and give an explanation (2-5 lines).
+  - User profile page displaying user information.
+  - Profile image and name are fetched from Firebase authentication.
 
-```javascript
-function sum(a, b) {
-  return a + b;
-}
+- **Toast Notifications:**
 
-sum(1, "2");
-```
+  - Real-time feedback using toast notifications.
+  - Toast messages for successful login, register, etc.
 
-- A: `NaN`
-- B: `TypeError`
-- C: `"12"`
-- D: `3`
+- **Responsive Navbar:**
 
-<details><summary><b>Answer</b></summary>
-<p>
+  - A responsive navigation bar with links to different sections of the site.
+  - Dynamic rendering of navigation links based on user authentication.
 
-#### Answer: ?
-
-<i>Write your explanation here</i>
-
-</p>
-</details>
-
-###### 3. Write the `correct answer` from the following options and give an explanation (2-5 lines).
-
-```javascript
-const food = ["🍕", "🍫", "🥑", "🍔"];
-const info = { favoriteFood: food[0] };
-
-info.favoriteFood = "🍝";
-
-console.log(food);
-```
-
-- A: `['🍕', '🍫', '🥑', '🍔']`
-- B: `['🍝', '🍫', '🥑', '🍔']`
-- C: `['🍝', '🍕', '🍫', '🥑', '🍔']`
-- D: `ReferenceError`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: ?
-
-<i>Write your explanation here</i>
-
-</p>
-</details>
-
-###### 4. Write the `correct answer` from the following options and give an explanation (2-5 lines).
-
-```javascript
-function sayHi(name) {
-  return `Hi there, ${name}`;
-}
-
-console.log(sayHi());
-```
-
-- A: `Hi there,`
-- B: `Hi there, undefined`
-- C: `Hi there, null`
-- D: `ReferenceError`
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: ?
-
-<i>Write your explanation here</i>
-
-</p>
-</details>
-
-###### 5. Write the `correct answer` from the following options and give an explanation (2-5 lines).
-
-```javascript
-let count = 0;
-const nums = [0, 1, 2, 3];
-
-nums.forEach((num) => {
-  if (num) count += 1;
-});
-
-console.log(count);
-```
-
-- A: 1
-- B: 2
-- C: 3
-- D: 4
-
-<details><summary><b>Answer</b></summary>
-<p>
-
-#### Answer: ?
-
-<i>Write your explanation here</i>
-
-</p>
-</details>
+- **Firebase Integration:**
+  - Seamless integration with Firebase for authentication and real-time updates.
