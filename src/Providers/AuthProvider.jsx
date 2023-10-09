@@ -24,8 +24,9 @@ const AuthProvider = ({ children }) => {
     try {
       signInWithPopup(auth, googleAuthProvider);
     } catch (error) {
-      setUser(null);
+      console.log(error.message);
     }
+    
   };
 
   const createUser = async (email, password) => {
