@@ -6,7 +6,7 @@ const AboutUs = () => {
         <div className="mb-4">
           <img
             className="w-full h-auto object-cover rounded"
-            src="https://placekitten.com/800/400"
+            src="https://i.ibb.co/8cpVjGv/guest-speaker.jpg"
             alt="Eduvent Team"
           />
         </div>
