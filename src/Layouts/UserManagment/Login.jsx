@@ -1,26 +1,44 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
-  const { logIn } = useContext(AuthContext);
+  const { logIn, googleSignIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const [loginError, setLoginError] = useState(null);
 
-  const handleLogIn = (e) => {
+  const handleGoogleSignIn = () => {
+    setLoginError(null);
+    try {
+      googleSignIn();
+      console.log("Login successful");
+      navigate(location?.state ? location.state : "/");
+    } catch (error) {
+      setLoginError(
+        `Invalid Email/Password. Please Enter Correctly. ${error.message}`
+      );
+    }
+  };
+
+  const handleLogIn = async (e) => {
     e.preventDefault();
+    setLoginError(null);
+
     const form = new FormData(e.currentTarget);
     const userEmail = form.get("email");
     const userPassword = form.get("password");
-    console.log(userEmail, userPassword);
-    logIn(userEmail, userPassword)
-      .then((result) => {
-        console.log(result.user);
-        navigate(location?.state ? location.state : "/");
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+
+    try {
+      await logIn(userEmail, userPassword);
+      // Successful login
+      console.log("Login successful");
+      navigate(location?.state ? location.state : "/");
+    } catch (error) {
+      setLoginError(
+        `Invalid Email/Password. Please Enter Correctly. ${error.message}`
+      );
+    }
   };
 
   return (
@@ -58,14 +76,22 @@ const Login = () => {
                 </a>
               </label>
             </div>
-            <div className="form-control ">
+            {loginError && (
+              <div className="form-control mb-4">
+                <p className="text-lg text-error">{loginError}</p>
+              </div>
+            )}
+            <div className="form-control">
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
+          <button className="btn btn-info mx-4 mb-4" onClick={handleGoogleSignIn}>
+            Google Sign In
+          </button>
           <label className="label mx-8 mb-4">
             <p className="label-text-alt link link-hover text-lg">
               {`Don't have an account?`}
-              <Link to={"/Register"}>
+              <Link to={"/register"}>
                 <button className="btn btn-accent ml-4">Register</button>
               </Link>
             </p>
