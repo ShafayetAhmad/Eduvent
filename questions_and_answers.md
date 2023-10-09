@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: {}
 
-<i>Write your explanation here</i>
+<i>the varibale greeting is initialized with an empty object {}. hence in console it will output the empty object {}</i>
 
 </p>
 </details>
@@ -43,9 +43,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: "12"
 
-<i>Write your explanation here</i>
+<i>Here two parameters are provided to the function sum where first one is a number but second one is a string. while performing + operation JavaScript will concatenate both into a single string which is "12". it will not add both mathmetically because of the second parameter being a string.</i>
 
 </p>
 </details>
@@ -69,9 +69,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: ['🍕', '🍫', '🥑', '🍔']
 
-<i>Write your explanation here</i>
+<i>The variable food is never modified here in this code. so it will be as it was initialized. hence the answer is A</i>
 
 </p>
 </details>
@@ -94,9 +94,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: Hi there, undefined
 
-<i>Write your explanation here</i>
+<i>In this code sayHi function is called without providing any parameter althouth it is expecting a parameter to concatenate in the string literal. As the parameter is not provided the variable name is undefined. so the answer would be B</i>
 
 </p>
 </details>
@@ -122,9 +122,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>In this code inside the forEach loop the variable count is being incremented with the condition if(num). now for the first element in the array 0 the value of if(num) is false as 0 is falsy vlaue. but for the rest of the elements the value of if(num) is true and the count variable will be incremented by 1 for each item. as there are 3 item in the array except for the first element which is 0, the value of count will be 3.</i>
 
 </p>
 </details>
