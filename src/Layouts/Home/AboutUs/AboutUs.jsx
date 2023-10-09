@@ -45,7 +45,7 @@ const AboutUs = () => {
             <img
               className="w-20 h-20 object-cover mx-auto mb-4 rounded-full"
               src="https://i.ibb.co/BBfJyC1/shafayet.png"
-              alt="John Doe"
+               
             />
             <h3 className="text-xl font-bold mb-2 text-center">
               Shafayet Ahmad Kanon
@@ -56,7 +56,7 @@ const AboutUs = () => {
             <img
               className="w-20 h-20 object-cover mx-auto mb-4 rounded-full"
               src="https://i.ibb.co/fxvtBY5/rafi.png"
-              alt="John Doe"
+               
             />
             <h3 className="text-xl font-bold mb-2 text-center">
               Kazi Rezaul Kabir Rafi
@@ -67,7 +67,7 @@ const AboutUs = () => {
             <img
               className="w-20 h-20 object-cover mx-auto mb-4 rounded-full"
               src="https://i.ibb.co/gwRBnp5/mahmudul.png "
-              alt="John Doe"
+               
             />
             <h3 className="text-xl font-bold mb-2 text-center">
               Mahmudul Hasan Shabab
