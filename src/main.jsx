@@ -18,6 +18,7 @@ import Blogs from "./Layouts/Home/Blogs/Blogs";
 import AboutUs from "./Layouts/Home/AboutUs/AboutUs";
 import ContactUs from "./Layouts/ContactUs/ContactUs";
 import ProfilePage from "./Layouts/ProfilePage/ProfilePage";
+import ProfileSettings from "./Layouts/ProfileSettings/ProfileSettings";
 
 const routes = createBrowserRouter([
   {
@@ -80,6 +81,14 @@ const routes = createBrowserRouter([
         element: (
           <PrivateRoute>
             <ProfilePage></ProfilePage>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/settings",
+        element: (
+          <PrivateRoute>
+            <ProfileSettings></ProfileSettings>
           </PrivateRoute>
         ),
       },

@@ -27,21 +27,24 @@ const ProfilePage = () => {
   return (
     <div className="text-center mt-12">
       <h1 className="text-3xl">Profile Page</h1>
-      {userData ? (
-        <div className="mt-5 ">
-          <div className="flex justify-center my-8">
+
+      <div className="mt-5 ">
+        {user.photoURL ? (
+          <div className="flex justify-center my-8 ">
             <img
               src={userData.photoURL}
               alt="Profile"
               style={{ width: "100px", height: "100px", borderRadius: "50%" }}
             />
           </div>
-          <h3>Name: {userData.displayName}</h3>
-          <p>Email: {userData.email}</p>
-        </div>
-      ) : (
-        <p>Please Sign In with Google To see your Data On this Page.</p>
-      )}
+        ) : (
+          <p className="text-error py-4">
+            Please Sign in with Google to see your Photo and Name Here
+          </p>
+        )}
+        <h3>Name: {userData.displayName}</h3>
+        <p>Email: {userData.email}</p>
+      </div>
     </div>
   );
 };
