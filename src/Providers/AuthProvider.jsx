@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
+// AuthProvider.js
 import { createContext, useEffect, useState } from "react";
-
 import {
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
@@ -10,23 +9,43 @@ import {
   signOut,
 } from "firebase/auth";
 import auth from "../Firebase/firebase.config";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [toastId, setToastId] = useState(null);
 
   const googleAuthProvider = new GoogleAuthProvider();
 
-  const googleSignIn = () => {
+  const showToast = (message) => {
+    const newToastId = toast.success(`🦄 Succesfully ${message}!`, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+    console.log(`old toastid`, toastId);
+    setToastId(newToastId);
+  };
+
+  const googleSignIn = async () => {
     setLoading(true);
     try {
-      signInWithPopup(auth, googleAuthProvider);
+      await signInWithPopup(auth, googleAuthProvider);
+      showToast("Logged In");
     } catch (error) {
-      console.log(error.message);
+      console.error(error.message);
+    } finally {
+      setLoading(false);
     }
-    
   };
 
   const createUser = async (email, password) => {
@@ -36,22 +55,35 @@ const AuthProvider = ({ children }) => {
     } catch (error) {
       console.error("Error creating user:", error.code, error.message);
       throw error;
+    } finally {
+      showToast("Registered");
+      setLoading(false);
     }
   };
 
   const logIn = (email, password) => {
+    try {
+      return signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      console.log(error.message);
+    } finally {
+      showToast("Logged In");
+    }
     setLoading(true);
-    return signInWithEmailAndPassword(auth, email, password);
   };
 
   const logOut = () => {
     setLoading(true);
     signOut(auth)
       .then(() => {
-        console.log("sign out");
+        
+        showToast("Logged Out");
       })
       .catch((error) => {
         console.log(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
@@ -65,17 +97,35 @@ const AuthProvider = ({ children }) => {
       unSubscribe();
     };
   }, []);
-  const authInfo = {
-    user,
-    createUser,
-    googleSignIn,
-    logIn,
-    logOut,
-    loading,
-    setUser,
-  };
+
   return (
-    <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
+    <>
+      <AuthContext.Provider
+        value={{
+          user,
+          createUser,
+          googleSignIn,
+          logIn,
+          logOut,
+          loading,
+          setUser,
+        }}
+      >
+        {children}
+      </AuthContext.Provider>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+    </>
   );
 };
 

@@ -8,10 +8,10 @@ const Login = () => {
   const location = useLocation();
   const [loginError, setLoginError] = useState(null);
 
-  const handleGoogleSignIn = () => {
+  const handleGoogleSignIn = async () => {
     setLoginError(null);
     try {
-      googleSignIn();
+      await googleSignIn();
       console.log("Login successful");
       navigate(location?.state ? location.state : "/");
     } catch (error) {
@@ -85,7 +85,10 @@ const Login = () => {
               <button className="btn btn-primary">Login</button>
             </div>
           </form>
-          <button className="btn btn-info mx-4 mb-4" onClick={handleGoogleSignIn}>
+          <button
+            className="btn btn-info mx-4 mb-4"
+            onClick={handleGoogleSignIn}
+          >
             Google Sign In
           </button>
           <label className="label mx-8 mb-4">
