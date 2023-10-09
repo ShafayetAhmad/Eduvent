@@ -2,6 +2,7 @@ import Blogs from "./Blogs/Blogs";
 import EventSection from "./Events/Events";
 import ServiceSection from "./Services/Services";
 import Slider from "./Slider/Slider";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <ServiceSection></ServiceSection>
       <Blogs></Blogs>
       <EventSection></EventSection>
+      <Testimonials></Testimonials>
     </>
   );
 };

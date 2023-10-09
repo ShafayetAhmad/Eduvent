@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
@@ -69,7 +69,10 @@ const Navbar = () => {
         </div>
       ) : (
         <div className="navbar-end">
-          <p className="mr-4">Hey, Alien. Please Login ➡️</p>
+          <p className="mr-4">
+            Hey, Alien.
+            <br /> Please Login ➡️
+          </p>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
@@ -124,7 +127,9 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <p className="btn btn-ghost normal-case text-5xl">Eduvent</p>
+        <p className="btn btn-ghost normal-case lg:text-5xl text-xl">
+          <Link to={"/"}> Eduvent</Link>
+        </p>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>

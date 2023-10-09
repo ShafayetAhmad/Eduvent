@@ -16,6 +16,7 @@ import EventDetails from "./Layouts/Home/EventDetails/EventDetails";
 import BlogDetails from "./Layouts/Home/BlogDetails/BlogDetails";
 import Blogs from "./Layouts/Home/Blogs/Blogs";
 import AboutUs from "./Layouts/Home/AboutUs/AboutUs";
+import ContactUs from "./Layouts/ContactUs/ContactUs";
 
 const routes = createBrowserRouter([
   {
@@ -93,10 +94,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: (
-          <AboutUs></AboutUs>
-        ),
-        loader: () => fetch("/events.json"),
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs></ContactUs>
       },
     ],
   },

@@ -5,7 +5,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 const BlogDetails = () => {
   const { id } = useParams();
   const blogs = useLoaderData();
-  const blog = blogs[id];
+  const blog = blogs[id-1];
   console.log(blog);
   return (
     <div className="container mx-auto mt-8">

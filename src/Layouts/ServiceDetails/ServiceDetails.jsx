@@ -5,7 +5,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 const ServiceDetail = () => {
   const { id } = useParams();
   const services = useLoaderData();
-  const service = services[id];
+  const service = services[id-1];
   console.log(service);
   return (
     <div className="container mx-auto mt-8">

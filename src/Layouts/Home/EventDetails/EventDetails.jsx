@@ -5,7 +5,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 const EventDetails = () => {
   const { id } = useParams();
   const events = useLoaderData();
-  const event = events[id];
+  console.log(events);
+  const event = events[id-1];
   console.log(event);
   return (
     <div className="container mx-auto mt-8">
